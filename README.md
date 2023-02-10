@@ -46,6 +46,6 @@
 - ![branch](src/images/8.png)
 - Check if your changes are able to merge and click **Create pull request** button
 - ![able-to-merge](src/images/9.png)
-- Add pull request title, leave a comment and press **Create pull request**
+- Add pull request title, leave a comment and click **Create pull request**
 - ![pull](src/images/10.png)
 
