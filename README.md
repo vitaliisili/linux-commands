@@ -48,4 +48,5 @@
 - ![able-to-merge](src/images/9.png)
 - Add pull request title, leave a comment and click **Create pull request**
 - ![pull](src/images/10.png)
+- Wait for review :mag:
 
