@@ -1,11 +1,14 @@
 # mkdir
 
-*mkdir command in Linux allows the user to create directories (also referred to as folders in some operating systems ). <br/>
+*`mkdir` command in Linux allows the user to create directories (also referred to as folders in some operating systems ). <br/>
 This command can create multiple directories at once as well as set the permissions for the directories. <br/> 
-It is important to note that the user executing this command must have enough permissions to create a directory <br/> in the parent directory, or he/she may receive a ‘permission denied’ error.*
+It is important to note that the user executing this command must have enough permissions to create a directory <br/> 
+in the parent directory, or he/she may receive a ‘permission denied’ error.*
 
-### Syntax
-#### *mkdir [options...] [directories ...]*
+## Syntax
+```bash 
+mkdir [options...] [directories ...]
+```
 
 ## Options
 
@@ -14,4 +17,27 @@ It is important to note that the user executing this command must have enough pe
 - `-v` : This option displays verbose information of each directory that is created.
 - `-version` : This option will print the information of the version and exit.
 - `--help` : This option will display the information of the mkdir command.
-- `-Z` : This option is used to set defaul SELinux rules on a particular directory at the time of creation.
+- `-Z` : This option is used to set default SELinux rules on a particular directory at the time of creation.
+
+## Examples
+
+### 1. Create a directory
+```bash
+mkdir project
+```
+This command will create a directory named project
+
+### 2. Display help information about the mkdir command
+```bash
+mkdir --help
+```
+
+### 3. Display information about created directories
+```bash
+mkdir -v project
+```
+
+### 4. Set permissions
+```bash
+mkdir -m a=rwx project
+```
