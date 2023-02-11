@@ -34,10 +34,10 @@
 
 #### 1. Is recommended to create new branch
 #### 2. For each command create new folder that represent linux command example for `mkdir command` folder should be named "**mkdir**"
-#### 3. Inside folder create a file with "**md**" extension example "*mkdir-command.md*"
+#### 3. Inside folder create a file"**readme.md**"
+#### 5. Use "Markdown syntax" to write documentation
 #### 4. Project tree example:
 ![project-ree](src/images/3.png)
-#### 5. Use "Markdown syntax" to write documentation
 
 <br>
 
