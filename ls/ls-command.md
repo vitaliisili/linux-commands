@@ -4,8 +4,10 @@
 is just a technical way of stating the directory that your terminal is presently in, <br/> 
 will be listed if you run the "ls" command without any further options.*
 
-### Syntax
-#### *ls [ Options ] [ File ]*
+## Syntax
+```bash
+ls [ Options ] [ File ]
+```
 
 ## Options
 
@@ -27,3 +29,25 @@ will be listed if you run the "ls" command without any further options.*
 - `-s` : List files with their sizes
 - `-q` : Force printing of non-graphic characters in file names as the character "`?';".
 - `-Q` : Place double quotations around the entry names.
+
+## Examples
+
+### 1. Display files and directories
+```bash
+ls
+```
+
+### 2. Display the hidden files and directories
+```bash
+ls -a
+```
+
+### 3. Display File Size in Human Readable Format
+```bash
+ls -lh
+```
+
+### 4. List the files and directories separated by a comma
+```bash
+ls -m
+```
