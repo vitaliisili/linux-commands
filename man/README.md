@@ -21,6 +21,16 @@ To display the complete manual, enter:
 man [command_name]
 ```
 
+## Options
+
+- `-a`: Display all available manual pages for the specified command.
+- `-C` `FILE`: Use the specified configuration file instead of the default one.
+- `-f`: Equivalent to whatis.
+- `-k` `KEYWORD`: Search the manual page names and descriptions for the specified `KEYWORD`.
+- `-w`: Equivalent to whereis.
+- `-P` `PAGER`: Use the specified pager program instead of the default one.
+- `-t`: Format the man page as PostScript.
+
 ## Examples
 
 For example, you want to access the manual for the `ls` command:
