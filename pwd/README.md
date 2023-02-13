@@ -1,35 +1,19 @@
-# **Command Line Basic**
- *There are some basic things to understand about command line that will help you effectively harness this powerful tool.*
+# pwd
 
- About `$` and `#` characters:
- 
- - `$` character means you are a normal user with limited rights
- - `#` character means you are a super user with all rights.
+*The `pwd` command is used to display the current working directory of a user's shell.*
 
-
-
-## **`pwd`**  Command
-
-*- Print the name of the current working directory.*
-
-### Syntax:
-```
-pwd: pwd [-LP]
-
+## Syntax:
+```bash
+pwd
 ```
 
-#### Options:
-   
-   `-L` : print the value of $PWD if it names the current working
-    		directory.
+## Options:
 
-`-P` :   print the value of `$PWD` if it names the current working
-    		directory.
+There are no options available with the `pwd` command.
 
-*By default, `pwd`   behaves as if  `-L` were specified.*
-  
+## Examples:
 
-  ##### **Short and Long parameters**:
-  ```
-  Short parameters are the most common used. Usually just one letter preceded by a dash(-).For example: -l, -a.
-  Long parameters are usually several characters preceded by double dashes (--).For example: --all, --version .
+### 1.Display the full path of the current working directory
+```bash
+pwd
+```
