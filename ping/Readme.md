@@ -16,6 +16,3 @@
 # step 
 
 - simply press `ctrl+z` to exit
-
-
-### You have mastered "ping command" 
