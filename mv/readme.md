@@ -1,4 +1,4 @@
-# mv - Linux command to move or rename files and directories
+# **mv - Linux command to move or rename files and directories**
 
 ## *The move command has different options that you can utilize when moving the files and directories.*
 
@@ -12,4 +12,10 @@
 
 # -n	The files remain intact and your file will not be moved to the destination directory.
 
-# -b	It creates a backup file in the destination directory.
+# -b	It creates a backup file in the destination directory.To explore more options of the “rm” command, users can utilize the “help” utility:
+
+#  *To explore more options of the “rm” command, users can utilize the “help” utility:*
+
+$ rm --help
+
+
