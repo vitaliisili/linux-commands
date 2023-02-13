@@ -8,17 +8,16 @@ It's a very good way to populate a new code project with empty files while also 
 
 ## Syntax
 ```bash
-$ touch [ OPTIONS ] filename(s) { COMMAND | help }
+$ touch [ OPTIONS ] filename(s)
 ```
 
 ## Additional Options
 
-`-a` : option to change only the file’s *access* time
-`-m` : option to change only the file’s *modify* time
-`-d` : create a file with a specific time other than the current time
-`--help` : displays the commands help page and exit
-`--version` :  outputs version information and exit
-
+`-a` : option to change only the file’s *access* time<br/>
+`-m` : option to change only the file’s *modify* time<br/>
+`-d` : create a file with a specific time other than the current time<br/>
+`--help` : displays the commands help page and exit<br/>
+`--version` :  outputs version information and exit<br/>
 
 ## Examples
 
