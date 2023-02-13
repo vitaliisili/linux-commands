@@ -15,16 +15,16 @@ Depending on the used options, `diff` can display the changes between files in d
 Lets assume we have two simple text files with the following content:
 #### File1:
 >Cat
-    Dog
-    Horse
-    Duck
-    Sheep
+Dog  
+Horse  
+Duck  
+Sheep  
 #### File2:
->Cat
-    Horse
-    Cow
-    Duck
-    Sheep and Goats
+>Cat  
+Horse  
+Cow  
+Duck  
+Sheep and Goats  
 
 When calling diff without any options the output of `diff file1 file2` will look like this:
 
