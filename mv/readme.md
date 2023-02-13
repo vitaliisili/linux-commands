@@ -14,8 +14,8 @@
 
 # -b	It creates a backup file in the destination directory.To explore more options of the “rm” command, users can utilize the “help” utility:
 
-#  *To explore more options of the “rm” command, users can utilize the “help” utility:*
+#  *To explore more options of the “mv” command, users can utilize the “help” utility:*
 
-$ rm --help
+$ mv --help
 
 
