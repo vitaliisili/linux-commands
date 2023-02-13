@@ -14,7 +14,7 @@ where *file1* and *file2* can be either relative or absolute paths.
 Depending on the used options, `diff` can display the changes between files in different ways.
 Lets assume we have two simple text files with the following content:
 #### File1:
->Cat
+>Cat  
 Dog  
 Horse  
 Duck  
