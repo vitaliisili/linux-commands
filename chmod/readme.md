@@ -11,30 +11,56 @@ To use the `chmod` command, simply type `chmod` followed by the permission setti
 chmod u+rwx,g+rw,o+r file.txt
 
 ## Options
-- `chmod +x file - Adds executable permission to a file for all users.
 
-- `chmod -x file - Removes executable permission from a file for all users.
+- Adds executable permission to a file for all users
+```bash
+`chmod +x file
 
-- `chmod u+x file - Adds executable permission to a file for the owner.
+- Removes executable permission from a file for all users.
+```bash
+`chmod -x file
 
-- `chmod g+x file - Adds executable permission to a file for the group.
+- Adds executable permission to a file for the owner.
+```bash
+`chmod u+x file
 
-- `chmod o+x file - Adds executable permission to a file for all other users.
+- Adds executable permission to a file for the group:
+```bash
+`chmod g+x file
 
-- `chmod a+x file - Adds executable permission to a file for all users.
+- Adds executable permission to a file for all other users:
+```bash
+`chmod o+x file
 
-- `chmod u=rwx,g=rw,o=r file - Sets the file permissions to read, write, and execute for the owner, read and write for the group, and read only for others.
+- Adds executable permission to a file for all users:
+```bash
+`chmod a+x file
 
-- `chmod -R u+rwX,g+rwX,o+rX directory - Recursively sets the file permissions of a directory and its contents to read and write for the owner and group, and read for others.
+- Sets the file permissions to read, write, and execute for the owner, read and write for the group, and read only for others:
+```bash
+`chmod u=rwx,g=rw,o=r file
+
+- Recursively sets the file permissions of a directory and its contents to read and write for the owner and group, and read for others:
+```bash
+`chmod -R u+rwX,g+rwX,o+rX directory
 
 ## Examples
--`chmod +x script.sh : make a file executable for all users
 
--`chmod -R u+rw,g+rw,o+r mydirectory : make a directory and its contents readable and writable by the owner and group, and readable by others:
+- make a file executable for all users
+```bash
+`chmod +x script.sh
 
--`chmod u+rw file.txt : give a specific user read and write access to a file
+- make a directory and its contents readable and writable by the owner and group, and readable by others
+```bash
+`chmod -R u+rw,g+rw,o+r mydirectory
 
--`chmod a-x script.sh : remove execute permission for all users from a file
+- give a specific user read and write access to a file
+```bash
+`chmod u+rw file.txt
+
+- remove execute permission for all users from a file
+```bash
+`chmod a-x script.sh
 
 ## Permission Settings
 
@@ -55,4 +81,6 @@ For example, a permission setting of `755` would allow the owner to read, write,
 
 ## Recursive Option
 
-To modify the permissions of all files and directories within a directory, you can use the `-R` or `--recursive` option
+To modify the permissions of all files and directories within a directory, you can use:
+```bash
+`-R` or `--recursive` option
