@@ -32,5 +32,5 @@ cp -r [foldername1] [foldername2]
 
 - In this example, the foldername1 should be a folder that already exists
 
-- In this example, the foldername2 should be a folder that does **`NOT`** exist
+- In this example, the foldername2 should be a folder that does `or`  does **`NOT`** exist
     - AKA [destination argument]
