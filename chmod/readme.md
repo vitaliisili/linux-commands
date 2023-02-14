@@ -9,77 +9,63 @@ To use the `chmod` command, simply type `chmod` followed by the permission setti
 ## Syntax
 
 ```bash
-chmod u+rwx,g+rw,o+r file.txt
+chmod [option] [target]
 ```
 
 ## Options
 
 - Adds executable permission to a file for all users:
 
-```bash
-chmod +x file
-```
++x
+
 
 - Removes executable permission from a file for all users:
 
-```bash
-chmod -x file
-```
+-x
+
 
 - Adds executable permission to a file for the owner:
 
-```bash
-chmod u+x file
-```
+u+x
 
 - Adds executable permission to a file for the group:
-```bash
-chmod g+x file
-```
+g+x
 
 - Adds executable permission to a file for all other users:
-```bash
-chmod o+x file
-```
+o+x
 
 - Adds executable permission to a file for all users:
-```bash
-chmod a+x file
-```
+a+x
 
 - Sets the file permissions to read, write, and execute for the owner, read and write for the group, and read only for others:
 
-```bash
-chmod u=rwx,g=rw,o=r file
-```
+u=rwx,g=rw,o=r
 
 - Recursively sets the file permissions of a directory and its contents to read and write for the owner and group, and read for others:
 
-```bash
-chmod -R u+rwX,g+rwX,o+rX directory
-```
+-R u+rwX,g+rwX,o+rX directory
 
 ## Examples
 
-- Make a file executable for all users:
+### **1. Make a file executable for all users:**
 
 ```bash
 chmod +x script.sh
 ```
 
-- Make a directory and its contents readable and writable by the owner and group, and readable by others:
+### **2. Make a directory and its contents readable and writable by the owner and group, and readable by others:**
 
 ```bash
 chmod -R u+rw,g+rw,o+r mydirectory
 ```
 
-- Give a specific user read and write access to a file:
+### **3. Give a specific user read and write access to a file:**
 
 ```bash
 chmod u+rw file.txt
 ```
 
-- Remove execute permission for all users from a file:
+### **4. Remove execute permission for all users from a file:**
 
 ```bash
 chmod a-x script.sh
