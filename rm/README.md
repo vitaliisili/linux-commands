@@ -1,95 +1,32 @@
-NAME
-       rm - remove files or directories
+# rm
 
-SYNOPSIS
-       rm [OPTION]... [FILE]...
+*The `rm` command is used to remove files and directories in Linux.*
 
-DESCRIPTION
-       This  manual  page  documents  the  GNU version of rm.  rm removes each
-       specified file.  By default, it does not remove directories.
+## Syntax
+```bash
+rm [OPTION]... FILE...
+```
 
-       If the -I or --interactive=once option is given,  and  there  are  more
-       than  three  files  or  the  -r,  -R, or --recursive are given, then rm
-       prompts the user for whether to proceed with the entire operation.   If
-       the response is not affirmative, the entire command is aborted.
+## Options
 
-       Otherwise,  if  a file is unwritable, standard input is a terminal, and
-       the -f or --force option is not given, or the -i  or  --interactive=al‐
-       ways  option  is  given,  rm prompts the user for whether to remove the
-       file.  If the response is not affirmative, the file is skipped.
-OPTIONS
-       Remove (unlink) the FILE(s).
+- `-f`: Force remove, ignore nonexistent files and never prompt for confirmation.
+- `-i`: Interactive mode, prompt for confirmation before removing files.
+- `-r` or `-R`: Recursive, remove directories and their contents recursively.
+- `--`: Treat all arguments after this option as file names, even if they start with a dash (-).
 
-       -f, --force
-              ignore nonexistent files and arguments, never prompt
+## Examples
 
-       -i     prompt before every removal
+### 1. Remove a single file
+```bash
+rm file.txt
+```
 
-       -I     prompt once before removing more than three files, or  when  re‐
-              moving  recursively;  less intrusive than -i, while still giving
-              protection against most mistakes
+### 2. Remove multiple files:
+```bash
+rm file1.txt file2.txt file3.txt
+```
 
-       --interactive[=WHEN]
-              prompt according to WHEN: never,  once  (-I),  or  always  (-i);
-              without WHEN, prompt always
-
-       --one-file-system
-              when  removing  a hierarchy recursively, skip any directory that
-              is on a file system different from  that  of  the  corresponding
-              command line argument
-
-             --no-preserve-root
-              do not treat '/' specially
-
-       --preserve-root[=all]
-              do not remove '/' (default); with 'all', reject any command line
-              argument on a separate device from its parent
-
-       -r, -R, --recursive
-              remove directories and their contents recursively
-
-       -d, --dir
-              remove empty directories
-
-       -v, --verbose
-              explain what is being done
---help display this help and exit
-
-       --version
-              output version information and exit
-
-       By default, rm does not remove directories.  Use the --recursive (-r or
-       -R)  option to remove each listed directory, too, along with all of its
-       contents.
-
-       To remove a file whose name starts with a '-', for example '-foo',  use
-       one of these commands:
-
-              rm -- -foo
-
-              rm ./-foo
-
-       Note  that  if you use rm to remove a file, it might be possible to re‐
-       cover some of its contents, given  sufficient  expertise  and/or  time.
-       For  greater  assurance that the contents are truly unrecoverable, con‐
-       sider using shred.
-AUTHOR
-       Written by Paul Rubin, David MacKenzie, Richard M.  Stallman,  and  Jim
-       Meyering.
-
-REPORTING BUGS
-       GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
-       Report any translation bugs to <https://translationproject.org/team/>
-
-COPYRIGHT
-       Copyright  ©  2020  Free Software Foundation, Inc.  License GPLv3+: GNU
-       GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
-       This is free software: you are free  to  change  and  redistribute  it.
-       There is NO WARRANTY, to the extent permitted by law.
-
-SEE ALSO
-       unlink(1), unlink(2), chattr(1), shred(1)
-
-       Full documentation <https://www.gnu.org/software/coreutils/rm>
-       or available locally via: info '(coreutils) rm invocation'
-
+### 3. Remove a directory and its contents
+```bash
+rm -r directory/
+```

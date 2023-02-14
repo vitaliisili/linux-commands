@@ -1,21 +1,34 @@
-# **mv - Linux command to move or rename files and directories**
+# mv
 
-## *The move command has different options that you can utilize when moving the files and directories.*
+*The `mv` command is used to move or rename files and directories in Linux.*
 
-# **Different options for mv**
+## Syntax
+```bash
+mv [OPTION]... SOURCE DEST
+```
 
-# -v    It overwrites the existing file or directory.
+## Options
 
-# -i	It prompts whether to overwrite the existing file or not.
+- `-b`: Make a backup of each file that would otherwise be overwritten or deleted.
+- `-f`: Force move, overwrite existing destination files.
+- `-i`: Interactive, prompt before overwriting existing destination files.
+- `-n`: Do not overwrite existing files.
+- `-u`: Move only when the SOURCE file is newer than the destination file or when the destination file is missing.
+- `-v`: Verbose, print the name of each file before moving it.
 
-# -f	It is used to forcefully overwrite the existing file without prompting.
+## Examples
 
-# -n	The files remain intact and your file will not be moved to the destination directory.
+### 1. To move a file named file.txt to a directory named docs
+```bash
+mv file.txt docs/
+```
 
-# -b	It creates a backup file in the destination directory.To explore more options of the “rm” command, users can utilize the “help” utility:
+### 2. To rename a file named oldfile.txt to newfile.txt
+```bash
+mv oldfile.txt newfile.txt
+```
 
-#  *To explore more options of the “mv” command, users can utilize the “help” utility:*
-
-$ mv --help
-
-
+### 3. To move a file named file.txt to a directory named docs and overwrite the existing file:
+```bash
+mv -f file.txt docs/
+```

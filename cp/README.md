@@ -1,36 +1,44 @@
-# Copying files
+# cp
 
-## First example
-1. cp can be used to copy the content from one **`file`** into another.
+*The `cp` (Copy) command is used to copy files and directories in a Linux terminal.*
 
-### Syntax
-```
-cp [filename1] [filename2]
-```
-- In this example, `filename1` and `filename2` should be  files that already exist.
-
-## Second example
-2. cp can also be used to copy the content from one file into a **`NEW file`**
-### Syntax
-```
-cp [filename1] [filename2]
-```
-- In this example, `filename1` should be a file that already exists.
-
-- In this example, `filename2` should be a file that does **`NOT`** exist.
-    - AKA [destination argument]
-
-# Copying folders
-
-## First example
-1. cp -r can be used to copy the content from one **`folder`** into another.
-
-### Syntax
-```
-cp -r [foldername1] [foldername2]
+## Syntax
+```bash
+cp [OPTION]... SOURCE DEST
 ```
 
-- In this example, the foldername1 should be a folder that already exists
+## Options
 
-- In this example, the foldername2 should be a folder that does `or`  does **`NOT`** exist
-    - AKA [destination argument]
+- `-a` or `--archive`: Equivalent to -dR --preserve=all.
+- `-b` or `--backup`: Make a backup of each file that would otherwise be overwritten or lost.
+- `-f` or `--force`: If the destination file cannot be opened, remove it and create a new file, without prompting for confirmation, regardless of its permissions.
+- `-i` or `--interactive`: Prompt for confirmation before overwriting an existing file.
+- `-l` or `--link`: Create a hard link instead of copying the file.
+- `-n` or `--no-clobber`: Do not overwrite an existing file.
+- `-P` or `--no-dereference`: Do not follow symbolic links.
+- `-p` or `--preserve`: Preserve the specified attributes (default: mode, ownership, timestamps).
+- `-R` or `--recursive`: Copy directories recursively.
+- `-s` or `--symbolic-link`: Create a symbolic link instead of copying the file.
+- `-S` or `--suffix`: Append the specified SUFFIX to each backup file made with -b.
+
+## Examples
+
+### 1. To copy a file
+```bash
+cp file.txt /path/to/destination/
+```
+
+### 2. To copy multiple files
+```bash
+cp file1.txt file2.txt /path/to/destination/
+```
+
+### 3. To copy a directory recursively
+```bash
+cp -R directory/ /path/to/destination/
+```
+
+### 4. To copy a file and prompt for confirmation before overwriting
+```bash
+cp -i file.txt /path/to/destination/
+```
