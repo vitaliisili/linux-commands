@@ -17,46 +17,46 @@ chmod u+rwx,g+rw,o+r file.txt
 - Adds executable permission to a file for all users:
 
 ```bash
-`chmod +x file
+chmod +x file
 ```
 
 - Removes executable permission from a file for all users:
 
 ```bash
-`chmod -x file
+chmod -x file
 ```
 
 - Adds executable permission to a file for the owner:
 
 ```bash
-`chmod u+x file
+chmod u+x file
 ```
 
 - Adds executable permission to a file for the group:
 ```bash
-`chmod g+x file
+chmod g+x file
 ```
 
 - Adds executable permission to a file for all other users:
 ```bash
-`chmod o+x file
+chmod o+x file
 ```
 
 - Adds executable permission to a file for all users:
 ```bash
-`chmod a+x file
+chmod a+x file
 ```
 
 - Sets the file permissions to read, write, and execute for the owner, read and write for the group, and read only for others:
 
 ```bash
-`chmod u=rwx,g=rw,o=r file
+chmod u=rwx,g=rw,o=r file
 ```
 
 - Recursively sets the file permissions of a directory and its contents to read and write for the owner and group, and read for others:
 
 ```bash
-`chmod -R u+rwX,g+rwX,o+rX directory
+chmod -R u+rwX,g+rwX,o+rX directory
 ```
 
 ## Examples
@@ -64,25 +64,25 @@ chmod u+rwx,g+rw,o+r file.txt
 - Make a file executable for all users:
 
 ```bash
-`chmod +x script.sh
+chmod +x script.sh
 ```
 
 - Make a directory and its contents readable and writable by the owner and group, and readable by others:
 
 ```bash
-`chmod -R u+rw,g+rw,o+r mydirectory
+chmod -R u+rw,g+rw,o+r mydirectory
 ```
 
 - Give a specific user read and write access to a file:
 
 ```bash
-`chmod u+rw file.txt
+chmod u+rw file.txt
 ```
 
 - Remove execute permission for all users from a file:
 
 ```bash
-`chmod a-x script.sh
+chmod a-x script.sh
 ```
 
 ## Permission Settings
