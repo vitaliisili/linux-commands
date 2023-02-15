@@ -29,12 +29,15 @@ chmod [option] [target]
 u+x
 
 - Adds executable permission to a file for the group:
+
 g+x
 
 - Adds executable permission to a file for all other users:
+
 o+x
 
 - Adds executable permission to a file for all users:
+
 a+x
 
 - Sets the file permissions to read, write, and execute for the owner, read and write for the group, and read only for others:
