@@ -1,8 +1,9 @@
 # rm
 
-*The `rm` command is used to remove files and directories in Linux.*
+_The `rm` command is used to remove files and directories in Linux._
 
 ## Syntax
+
 ```bash
 rm [OPTION]... FILE...
 ```
@@ -17,16 +18,25 @@ rm [OPTION]... FILE...
 ## Examples
 
 ### 1. Remove a single file
+
 ```bash
 rm file.txt
 ```
 
 ### 2. Remove multiple files:
+
 ```bash
 rm file1.txt file2.txt file3.txt
 ```
 
 ### 3. Remove a directory and its contents
+
 ```bash
 rm -r directory/
+```
+
+### 4. Remove empty directories
+
+```bash
+rm -d directory/
 ```
