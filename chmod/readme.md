@@ -14,40 +14,37 @@ chmod [option] [target]
 
 ## Options
 
-- Adds executable permission to a file for all users:
+- `+x` [Adds executable permission to a file for all users]
 
-    +x
-
-
-- Removes executable permission from a file for all users:
-
-    -x
+    
 
 
-- Adds executable permission to a file for the owner:
+- `-x` [Removes executable permission from a file for all users]
 
-    u+x
+    
 
-- Adds executable permission to a file for the group:
 
-g+x
+- `u+x` [Adds executable permission to a file for the owner]
 
-- Adds executable permission to a file for all other users:
+    
 
-    o+x
+- `g+x` [Adds executable permission to a file for the group]
 
-- Adds executable permission to a file for all users:
 
-    a+x
 
-- Sets the file permissions to read, write, and execute for the owner, read and write for the group, and read only for others:
+- `o+x` [Adds executable permission to a file for all other users]
 
-    u=rwx,g=rw,o=r
+    
 
-- Recursively sets the file permissions of a directory and its contents to read and write for the owner and group, and read for others:
+- `a+x` [Adds executable permission to a file for all users[
+    
 
-   -R u+rwX,g+rwX,o+rX directory
+- `u=rwx,g=rw,o=r` [Sets the file permissions to read, write, and execute for the owner, read and write for the group, and read only for others]
 
+    
+- `-R u+rwX,g+rwX,o+rX` directory [Recursively sets the file permissions of a directory and its contents to read and write for the owner and group, and read for others]
+
+   
 ## Examples
 
 ### **1. Make a file executable for all users:**
