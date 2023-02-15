@@ -16,17 +16,17 @@ chmod [option] [target]
 
 - Adds executable permission to a file for all users:
 
-+x
+    +x
 
 
 - Removes executable permission from a file for all users:
 
--x
+    -x
 
 
 - Adds executable permission to a file for the owner:
 
-u+x
+    u+x
 
 - Adds executable permission to a file for the group:
 
@@ -34,19 +34,19 @@ g+x
 
 - Adds executable permission to a file for all other users:
 
-o+x
+    o+x
 
 - Adds executable permission to a file for all users:
 
-a+x
+    a+x
 
 - Sets the file permissions to read, write, and execute for the owner, read and write for the group, and read only for others:
 
-u=rwx,g=rw,o=r
+    u=rwx,g=rw,o=r
 
 - Recursively sets the file permissions of a directory and its contents to read and write for the owner and group, and read for others:
 
--R u+rwX,g+rwX,o+rX directory
+   -R u+rwX,g+rwX,o+rX directory
 
 ## Examples
 
