@@ -26,4 +26,4 @@ For example, a permission setting of `755` would allow the owner to read, write,
 
 ## Recursive Option
 
-To modify the permissions of all files and directories within a directory, you can use the `-R` or `--recursive` option:
+To modify the permissions of all files and directories within a directory, you can use the `-R` or `--recursive` option
